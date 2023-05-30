@@ -33,15 +33,6 @@ output application/json
 				</ee:transform>
 			</route>
 		</scatter-gather>
-		<ee:transform doc:name="Transform Message" doc:id="8d31b320-9153-4a97-90db-453d70cb1b8a" >
-			<ee:message >
-				<ee:set-payload ><![CDATA[%dw 2.0
-import module::customFunction
-output application/json
----
-payload]]></ee:set-payload>
-			</ee:message>
-		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="11c80e1b-d7df-4bf2-bae5-39e79b9ed6a5" message="logger"/>
 	</flow>
 </mule>
