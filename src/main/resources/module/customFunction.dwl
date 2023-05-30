@@ -1,0 +1,1 @@
+fun updateString(value:String)="welcome" ++ " " ++ value
